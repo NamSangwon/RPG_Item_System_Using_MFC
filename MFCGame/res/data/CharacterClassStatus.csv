@@ -1,0 +1,8 @@
+#Index,CharacterClass,HP,MP,RegenerateHP,RegenrateMP,AttackPower,MagicPower,Defence,MoveSpeed,AttackSpeed,CriticalRate,CriticalDamage
+1,citizen,10000,10000,10,10,10,10,10,1,1,0,0
+2,warrior,15000,15000,20,20,30,10,20,1,1,0,0
+3,mage,10000,10000,10,10,10,30,10,1,1,0,0
+4,hunter,12000,12000,10,10,20,10,15,1,1.2,5,10
+5,paladin,20000,20000,10,10,15,15,30,0.8,0.8,0,0
+6,priest,10000,10000,20,20,10,20,10,1,1,0,0
+7,rogue,10000,10000,10,10,15,10,10,1.2,1.5,0,0

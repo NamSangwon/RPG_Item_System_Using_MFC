@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{4B68875E-BFBB-47FC-AE11-7C0331E54576}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>MFCGame</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>C:\Program Files\MariaDB 11.4\lib;$(LibraryPath)</LibraryPath>
+    <EmbedManifest>true</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\Program Files\MariaDB 11.4\include\mysql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>C:\Program Files\MariaDB 11.4\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libmariadb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Manifest>
+      <EnableDpiAwareness>false</EnableDpiAwareness>
+      <AdditionalManifestFiles>%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\Program Files\MariaDB 11.4\include\mysql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Program Files\MariaDB 11.4\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\Program Files\MariaDB 11.4\include\mysql;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MFCGame.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\data\AbilityList.csv" />
+    <None Include="res\data\CharacterClassStatus.csv" />
+    <None Include="res\data\Consume1.csv" />
+    <None Include="res\data\Equipment1.csv" />
+    <None Include="res\data\Equipment2.csv" />
+    <None Include="res\data\Generate.csv" />
+    <None Include="res\MFCGame.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\image\boots_1.png" />
+    <Image Include="res\image\boots_2.png" />
+    <Image Include="res\image\bow_1.png" />
+    <Image Include="res\image\bow_2.png" />
+    <Image Include="res\image\chest_1.png" />
+    <Image Include="res\image\chest_2.png" />
+    <Image Include="res\image\daeger_1.png" />
+    <Image Include="res\image\daeger_2.png" />
+    <Image Include="res\image\error.bmp" />
+    <Image Include="res\image\gacha_box.png" />
+    <Image Include="res\image\gloves_1.png" />
+    <Image Include="res\image\gloves_2.png" />
+    <Image Include="res\image\helmet_1.png" />
+    <Image Include="res\image\helmet_2.png" />
+    <Image Include="res\image\mana_potion.png" />
+    <Image Include="res\image\pants_1.png" />
+    <Image Include="res\image\pants_2.png" />
+    <Image Include="res\image\staff_1.png" />
+    <Image Include="res\image\staff_2.png" />
+    <Image Include="res\image\sword_1.png" />
+    <Image Include="res\image\sword_2.png" />
+    <Image Include="res\MFCGame.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Character\BaseCharacter.cpp" />
+    <ClCompile Include="Character\UserCharacter.cpp" />
+    <ClCompile Include="Dialog\Login\CharacterSelectDlg.cpp" />
+    <ClCompile Include="Dialog\Login\DeleteUserDlg.cpp" />
+    <ClCompile Include="Dialog\Login\LoginDlg.cpp" />
+    <ClCompile Include="Dialog\Login\RegisterDlg.cpp" />
+    <ClCompile Include="Dialog\Main\Child\ItemBoxDlg.cpp" />
+    <ClCompile Include="Dialog\Main\Child\InfoBoxDlg.cpp" />
+    <ClCompile Include="Dialog\Main\Child\SelectCountDlg.cpp" />
+    <ClCompile Include="Dialog\Main\Child\StatusElementDlg.cpp" />
+    <ClCompile Include="Dialog\Main\EquipmentDlg.cpp" />
+    <ClCompile Include="Dialog\Main\InventoryDlg.cpp" />
+    <ClCompile Include="Dialog\Main\GachaControllerDlg.cpp" />
+    <ClCompile Include="Dialog\Main\ItemInfoDlg.cpp" />
+    <ClCompile Include="Dialog\Main\MFCGameDlg.cpp" />
+    <ClCompile Include="Dialog\Main\StatusDlg.cpp" />
+    <ClCompile Include="Dialog\Main\UserBarDlg.cpp" />
+    <ClCompile Include="Interface\Observer.cpp" />
+    <ClCompile Include="Interface\SingletonTemplate.cpp" />
+    <ClCompile Include="Interface\Subject.cpp" />
+    <ClCompile Include="Manager\DatabaseManager.cpp" />
+    <ClCompile Include="Manager\ItemGenerator.cpp" />
+    <ClCompile Include="MFCGame.cpp" />
+    <ClCompile Include="Model\Ability\AbilityData.cpp" />
+    <ClCompile Include="Model\Ability\AbilityOption.cpp" />
+    <ClCompile Include="Model\Equipment.cpp" />
+    <ClCompile Include="Model\Inventory.cpp" />
+    <ClCompile Include="Model\Item\NSW_Armor.cpp" />
+    <ClCompile Include="Model\Item\NSW_Consume.cpp" />
+    <ClCompile Include="Model\Item\NSW_Equipment.cpp" />
+    <ClCompile Include="Model\Item\NSW_Item.cpp" />
+    <ClCompile Include="Model\Item\NSW_Potion.cpp" />
+    <ClCompile Include="Model\Item\NSW_Weapon.cpp" />
+    <ClCompile Include="Model\Status\AdvancedStatus.cpp" />
+    <ClCompile Include="Model\Status\BasicStatus.cpp" />
+    <ClCompile Include="Model\UserStatus.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Character\BaseCharacter.h" />
+    <ClInclude Include="Character\UserCharacter.h" />
+    <ClInclude Include="Dialog\Login\CharacterSelectDlg.h" />
+    <ClInclude Include="Dialog\Login\DeleteUserDlg.h" />
+    <ClInclude Include="Dialog\Login\LoginDlg.h" />
+    <ClInclude Include="Dialog\Login\RegisterDlg.h" />
+    <ClInclude Include="Dialog\Main\Child\ItemBoxDlg.h" />
+    <ClInclude Include="Dialog\Main\Child\InfoBoxDlg.h" />
+    <ClInclude Include="Dialog\Main\Child\SelectCountDlg.h" />
+    <ClInclude Include="Dialog\Main\Child\StatusElementDlg.h" />
+    <ClInclude Include="Dialog\Main\EquipmentDlg.h" />
+    <ClInclude Include="Dialog\Main\InventoryDlg.h" />
+    <ClInclude Include="Dialog\Main\GachaControllerDlg.h" />
+    <ClInclude Include="Dialog\Main\ItemInfoDlg.h" />
+    <ClInclude Include="Dialog\Main\MFCGameDlg.h" />
+    <ClInclude Include="Dialog\Main\StatusDlg.h" />
+    <ClInclude Include="Dialog\Main\UserBarDlg.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="Interface\Observer.h" />
+    <ClInclude Include="Interface\SingletonTemplate.h" />
+    <ClInclude Include="Interface\Subject.h" />
+    <ClInclude Include="Manager\DatabaseManager.h" />
+    <ClInclude Include="Manager\ItemGenerator.h" />
+    <ClInclude Include="MFCGame.h" />
+    <ClInclude Include="Model\Ability\AbilityData.h" />
+    <ClInclude Include="Model\Ability\AbilityOption.h" />
+    <ClInclude Include="Model\Equipment.h" />
+    <ClInclude Include="Model\Inventory.h" />
+    <ClInclude Include="Model\Item\NSW_Armor.h" />
+    <ClInclude Include="Model\Item\NSW_Consume.h" />
+    <ClInclude Include="Model\Item\NSW_Equipment.h" />
+    <ClInclude Include="Model\Item\NSW_Item.h" />
+    <ClInclude Include="Model\Item\NSW_Potion.h" />
+    <ClInclude Include="Model\Item\NSW_Weapon.h" />
+    <ClInclude Include="Model\Status\AdvancedStatus.h" />
+    <ClInclude Include="Model\Status\BasicStatus.h" />
+    <ClInclude Include="Model\UserStatus.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

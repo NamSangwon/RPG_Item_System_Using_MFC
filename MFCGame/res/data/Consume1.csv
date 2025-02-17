@@ -1,0 +1,2 @@
+#Index,Type,Name,Rank,FilePath,Weight,Durability,RecoverAmount,MinDefence,MaxDefence,MinAttackPower,MaxAttackPower,MinMagicPower,MaxMagicPower,Range,AttackSpeed,Probability
+1,15,Mana_Potion,0,res\\image\\mana_potion.png,1,-,30,-,-,-,-,-,-,-,-,1

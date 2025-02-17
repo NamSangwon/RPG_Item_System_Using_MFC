@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일\image">
+      <UniqueIdentifier>{9aa11218-6628-49ca-9261-7e8cf1b1cb16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\data">
+      <UniqueIdentifier>{440b5f66-dee9-4f95-b1c0-691528d28e80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{a543051b-4d36-428d-afde-5acf35716bd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Character">
+      <UniqueIdentifier>{40ae3e70-eac5-4ff4-bad0-cfa77f7c490b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Dialog">
+      <UniqueIdentifier>{7c113f6f-ce58-45f9-81cd-d559a9e32ea4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Manager">
+      <UniqueIdentifier>{cd5865f4-9122-44f9-9d00-15a1f1d1995f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Model">
+      <UniqueIdentifier>{b038e97f-fcb0-49e0-990d-fc38da9aebb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Dialog\Main">
+      <UniqueIdentifier>{213327ac-fd2d-40df-8e67-a076087a7ba1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Dialog\Login">
+      <UniqueIdentifier>{a4192eb7-bb3e-4bd6-8946-dd75a664978b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Character">
+      <UniqueIdentifier>{ffe39fd2-4556-4a7d-aa48-7b357e8cd241}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Dialog">
+      <UniqueIdentifier>{9f0f5e8a-fd25-4c72-a977-30bbd53f9706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Manager">
+      <UniqueIdentifier>{3a3c0d9a-b70a-4434-b3b6-99dfd5eeacf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Model">
+      <UniqueIdentifier>{e56ce5ad-54d4-41e5-a695-0e36fa4cfa80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Dialog\Main">
+      <UniqueIdentifier>{243770a9-f140-4c29-be53-64afdc430c29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Dialog\Login">
+      <UniqueIdentifier>{51fa14da-638a-4b3e-af91-560d2f9f16c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Interface">
+      <UniqueIdentifier>{ae9b0e6d-3bfa-4d51-a9b7-aa7c314ea1c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Interface">
+      <UniqueIdentifier>{944b4c4b-33fd-4b4d-bc7f-4f54e5811025}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Dialog\Main\Child">
+      <UniqueIdentifier>{d122df19-98be-4bbc-a0cf-47fd9a946792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Dialog\Main\Child">
+      <UniqueIdentifier>{47b37b64-e092-4abc-98d2-f34e9675e3fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Model\Item">
+      <UniqueIdentifier>{350b68dc-749d-46e7-889f-cc3f902dcd5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Model\Item">
+      <UniqueIdentifier>{c77e7d85-193a-4458-a7dd-340fcc8e7adc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Model\Status">
+      <UniqueIdentifier>{38d014a6-d123-419e-ae12-2515a2c08449}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Model\Ability">
+      <UniqueIdentifier>{cb166ca9-54e3-43c8-9616-095d4022f9f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Model\Ability">
+      <UniqueIdentifier>{a1f2c463-a121-4a5e-92a3-2ab8ef04198d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Model\Status">
+      <UniqueIdentifier>{756d1cc5-e693-4c1d-8283-1b9a4d4dcfa5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MFCGame.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\data\Equipment1.csv">
+      <Filter>리소스 파일\data</Filter>
+    </None>
+    <None Include="res\data\Equipment2.csv">
+      <Filter>리소스 파일\data</Filter>
+    </None>
+    <None Include="res\data\Generate.csv">
+      <Filter>리소스 파일\data</Filter>
+    </None>
+    <None Include="res\data\AbilityList.csv">
+      <Filter>리소스 파일\data</Filter>
+    </None>
+    <None Include="res\data\Consume1.csv">
+      <Filter>리소스 파일\data</Filter>
+    </None>
+    <None Include="res\data\CharacterClassStatus.csv">
+      <Filter>리소스 파일\data</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\MFCGame.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\image\boots_2.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\bow_1.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\bow_2.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\chest_1.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\chest_2.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\daeger_1.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\daeger_2.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\error.bmp">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\gacha_box.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\gloves_1.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\gloves_2.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\helmet_1.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\helmet_2.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\mana_potion.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\pants_1.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\pants_2.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\staff_1.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\staff_2.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\sword_1.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\sword_2.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+    <Image Include="res\image\boots_1.png">
+      <Filter>리소스 파일\image</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MFCGame.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Model\UserStatus.cpp">
+      <Filter>소스 파일\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\Equipment.cpp">
+      <Filter>소스 파일\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\Inventory.cpp">
+      <Filter>소스 파일\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\DatabaseManager.cpp">
+      <Filter>소스 파일\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\ItemGenerator.cpp">
+      <Filter>소스 파일\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\Observer.cpp">
+      <Filter>소스 파일\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\SingletonTemplate.cpp">
+      <Filter>소스 파일\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\Subject.cpp">
+      <Filter>소스 파일\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\Main\EquipmentDlg.cpp">
+      <Filter>소스 파일\Dialog\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\Main\InventoryDlg.cpp">
+      <Filter>소스 파일\Dialog\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\Main\GachaControllerDlg.cpp">
+      <Filter>소스 파일\Dialog\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\Main\MFCGameDlg.cpp">
+      <Filter>소스 파일\Dialog\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\Login\CharacterSelectDlg.cpp">
+      <Filter>소스 파일\Dialog\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\Login\DeleteUserDlg.cpp">
+      <Filter>소스 파일\Dialog\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\Login\LoginDlg.cpp">
+      <Filter>소스 파일\Dialog\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\Login\RegisterDlg.cpp">
+      <Filter>소스 파일\Dialog\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\Main\Child\ItemBoxDlg.cpp">
+      <Filter>소스 파일\Dialog\Main\Child</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\Main\Child\InfoBoxDlg.cpp">
+      <Filter>소스 파일\Dialog\Main\Child</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\Main\Child\SelectCountDlg.cpp">
+      <Filter>소스 파일\Dialog\Main\Child</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\Main\Child\StatusElementDlg.cpp">
+      <Filter>소스 파일\Dialog\Main\Child</Filter>
+    </ClCompile>
+    <ClCompile Include="Character\BaseCharacter.cpp">
+      <Filter>소스 파일\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Character\UserCharacter.cpp">
+      <Filter>소스 파일\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\Main\StatusDlg.cpp">
+      <Filter>소스 파일\Dialog\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCGame.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\Main\UserBarDlg.cpp">
+      <Filter>소스 파일\Dialog\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\Main\ItemInfoDlg.cpp">
+      <Filter>소스 파일\Dialog\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\Status\AdvancedStatus.cpp">
+      <Filter>소스 파일\Model\Status</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\Status\BasicStatus.cpp">
+      <Filter>소스 파일\Model\Status</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\Item\NSW_Armor.cpp">
+      <Filter>소스 파일\Model\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\Item\NSW_Consume.cpp">
+      <Filter>소스 파일\Model\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\Item\NSW_Equipment.cpp">
+      <Filter>소스 파일\Model\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\Item\NSW_Item.cpp">
+      <Filter>소스 파일\Model\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\Item\NSW_Potion.cpp">
+      <Filter>소스 파일\Model\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\Item\NSW_Weapon.cpp">
+      <Filter>소스 파일\Model\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\Ability\AbilityData.cpp">
+      <Filter>소스 파일\Model\Ability</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\Ability\AbilityOption.cpp">
+      <Filter>소스 파일\Model\Ability</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Model\Equipment.h">
+      <Filter>헤더 파일\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Inventory.h">
+      <Filter>헤더 파일\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\UserStatus.h">
+      <Filter>헤더 파일\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\DatabaseManager.h">
+      <Filter>헤더 파일\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\ItemGenerator.h">
+      <Filter>헤더 파일\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\Observer.h">
+      <Filter>헤더 파일\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\SingletonTemplate.h">
+      <Filter>헤더 파일\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\Subject.h">
+      <Filter>헤더 파일\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\Main\EquipmentDlg.h">
+      <Filter>헤더 파일\Dialog\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\Main\InventoryDlg.h">
+      <Filter>헤더 파일\Dialog\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\Main\GachaControllerDlg.h">
+      <Filter>헤더 파일\Dialog\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\Main\MFCGameDlg.h">
+      <Filter>헤더 파일\Dialog\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\Login\CharacterSelectDlg.h">
+      <Filter>헤더 파일\Dialog\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\Login\DeleteUserDlg.h">
+      <Filter>헤더 파일\Dialog\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\Login\LoginDlg.h">
+      <Filter>헤더 파일\Dialog\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\Login\RegisterDlg.h">
+      <Filter>헤더 파일\Dialog\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\Main\Child\ItemBoxDlg.h">
+      <Filter>헤더 파일\Dialog\Main\Child</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\Main\Child\InfoBoxDlg.h">
+      <Filter>헤더 파일\Dialog\Main\Child</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\Main\Child\SelectCountDlg.h">
+      <Filter>헤더 파일\Dialog\Main\Child</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\Main\Child\StatusElementDlg.h">
+      <Filter>헤더 파일\Dialog\Main\Child</Filter>
+    </ClInclude>
+    <ClInclude Include="Character\BaseCharacter.h">
+      <Filter>헤더 파일\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Character\UserCharacter.h">
+      <Filter>헤더 파일\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\Main\StatusDlg.h">
+      <Filter>헤더 파일\Dialog\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCGame.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\Main\UserBarDlg.h">
+      <Filter>헤더 파일\Dialog\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\Main\ItemInfoDlg.h">
+      <Filter>헤더 파일\Dialog\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Status\AdvancedStatus.h">
+      <Filter>헤더 파일\Model\Status</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Status\BasicStatus.h">
+      <Filter>헤더 파일\Model\Status</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Item\NSW_Armor.h">
+      <Filter>헤더 파일\Model\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Item\NSW_Consume.h">
+      <Filter>헤더 파일\Model\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Item\NSW_Equipment.h">
+      <Filter>헤더 파일\Model\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Item\NSW_Item.h">
+      <Filter>헤더 파일\Model\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Item\NSW_Potion.h">
+      <Filter>헤더 파일\Model\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Item\NSW_Weapon.h">
+      <Filter>헤더 파일\Model\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Ability\AbilityData.h">
+      <Filter>헤더 파일\Model\Ability</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Ability\AbilityOption.h">
+      <Filter>헤더 파일\Model\Ability</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
